@@ -1,0 +1,29 @@
+﻿@page
+@model MyWebApp.Pages.contactModel
+@{
+    <h1> Formulaire des Contacts </h1>
+
+    @if (Model.hasData)
+    {
+        <p> Bonjour @Model.nom  @Model.prenom</p>
+        <p> nous avons bien reçu votre message</p>
+        <p>@Model.message</p>
+    }
+
+
+    <div class="container">
+        <form method="post">
+            <label for="nom">Nom :</label><br>
+            <input type="text" id="nom" name="nom"><br>
+
+            <label for="prenom">Prénom :</label><br>
+            <input type="text" id="prenom" name="prenom"><br>
+
+            <label for="message">Message :</label><br>
+            <textarea id="message" name="message" style="height:200px"></textarea><br>
+
+            <input type="submit" value="Envoyer">
+        </form>
+    </div>
+
+}
