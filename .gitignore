@@ -46,6 +46,5 @@ appsettings.Development.json
 *.pdb
 
 # Publish folders
-wwwroot/
 node_modules/
 *.publish.xml
